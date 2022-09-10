@@ -38,5 +38,5 @@ setup(
     classifiers=[
         'Programming Language :: Python :: 3',
     ],
-    url='https://github.com/byumov/Telegram-to-TamTam-stickers'
+    url='https://github.com/annihilatorrrr/tgtotamtamsticker'
 )
