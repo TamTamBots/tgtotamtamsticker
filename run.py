@@ -12,15 +12,18 @@ log.setLevel(logging.DEBUG)
 
 
 def run():
-    tg_token = os.getenv("TELEGRAM_BOT_TOKEN")
+    tg_token = os.environ.get("TELEGRAM_BOT_TOKEN")
     if tg_token is None:
         print("env var TELEGRAM_BOT_TOKEN must be set")
         sys.exit(1)
 
-    tt_token = os.getenv("TAMTAM_BOT_TOKEN")
+    tt_token = os.environ.get("TAMTAM_BOT_TOKEN")
     if tt_token is None:
         print("env var TAMTAM_BOT_TOKEN must be set")
         sys.exit(1)
     log.info("starting bot...")
     tt_bot = TamTamBot(tt_token, tg_token)
     tt_bot.run()
+
+
+run()
