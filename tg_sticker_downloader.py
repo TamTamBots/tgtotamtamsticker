@@ -10,7 +10,7 @@ from typing import List, Optional
 
 import requests
 
-from .image_converter import ImageConverter
+from image_converter import ImageConverter
 
 TELEGRAM_API_BASE_URL = "https://api.telegram.org"
 
