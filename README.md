@@ -1,3 +1,5 @@
+## THIS REPO IS JUST A FORK OF ORIGINAL REPO!
+
 # Telegram to TamTam sticker.
 
 [@tgsticker](https://tt.me/tgsticker)
