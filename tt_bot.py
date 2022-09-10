@@ -7,7 +7,7 @@ from typing import List, TypedDict
 import requests
 from aiohttp import web
 
-from .text_messages import (
+from text_messages import (
     MSG_ERROR,
     MSG_MANY_STICKERS,
     MSG_SET_IN_PROGRESS,
@@ -15,7 +15,7 @@ from .text_messages import (
     MSG_SUCCESS,
     MSG_WELCOME,
 )
-from .tg_sticker_downloader import TGStickerDownloader
+from tg_sticker_downloader import TGStickerDownloader
 
 
 class _MessageDictBase(TypedDict):
