@@ -1,24 +1,24 @@
-# Telegram to TamTam stickers
+# Telegram to TamTam sticker.
 
-[@tg_stickers](https://tt.me/tg_stickers)
+[@tgsticker](https://tt.me/tgsticker)
 
-TamTam бот, который конвертирует Telegram стикеры в формат TamTam и помогает загрузить их в TamTam.
+A is a bot that converts Telegram stickers to TamTam format and helps to upload them to TamTam.
 
-Все делается быстро, в несколько кликов.
-Все любимые стикер-паки из Telegram теперь в TamTam 🥳
+Everything is done quickly, in a few clicks.
+All your favorite sticker packs from Telegram are now in TamTam!
 
-## Краткая инструкция
+## Short instruction:
 
-1) Пишем боту [@tg_stickers](https://tt.me/tg_stickers), отправляем ему имя стикер пака из Telegram
+1) Send the name of the sticker pack from Telegram:
 
-    *Имя стикер пака можно получить пошарив пак в любой чат, например, себе в "Saved messages". Получится ссылка вида: [https://t.me/addstickers/RickAndMorty](https://t.me/addstickers/RickAndMorty)*
+    *The name of the sticker pack can be obtained by rummaging through the pack in any chat, for example, in your "Saved messages". You will get a link like this:[https://t.me/addstickers/RickAndMorty](https://t.me/addstickers/RickAndMorty)*
 
-    *Имя пака в этом случае -* ***RickAndMorty***
+   *The name of the pack in this case is* ***RickAndMorty***
 
-2) Бот пришлет архив(ы) со стикерами в нужном формате, сохраняем их
+2) The bot will send the archive(s) with stickers in the required format, save them.
 
-3) Пишем официальному ТамТам боту для добавления стикеров: [@stickers](https://tt.me/stickers)
+3) Send them to the official TamTam bot to add stickers: [@stickers](https://tt.me/stickers)
 
-4) Следуем инструкциям от [@stickers](https://tt.me/stickers) бота как-то так: новый пак -> задаем имя -> отправляем наш архив(ы). Если архивов несколько, ждем пока обработается предыдущий(бот напишет, что добавил стикеры) и отправляем следующий.
+4) Follow the instructions from the [@stickers](https://tt.me/stickers) bot something like this: new pack -> set name -> send our archive(s). If there are several archives, we wait until the previous one is processed (the bot will write that it added stickers) and send the next one.
 
-5) Готово 🎉
+5) Done 🎉.
