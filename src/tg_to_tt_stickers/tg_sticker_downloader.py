@@ -52,13 +52,12 @@ class TGStickerDownloader:
         except Exception:
             return None
         self.log.debug("resp: %s", json.dumps(res))
-        stickers = []
-        for sticker in res['result']['stickers']:
-            stickers.append(Sticker(
-                file_id=sticker['file_id'],
-                emoji=sticker['emoji'],
-                file_bytes=b""
-            ))
+        stickers = [
+            Sticker(
+                file_id=sticker['file_id'], emoji=sticker['emoji'], file_bytes=b""
+            )
+            for sticker in res['result']['stickers']
+        ]
         return StickersSet(res['result']['name'], res['result']['title'], stickers)
 
     def get_sticker_file(self, file_id) -> TGFile:
@@ -98,10 +97,8 @@ class TGStickerDownloader:
             result_zip_names = []
 
             parts = self.chunks(result_files, 50)
-            part_n = 0
-            for part in parts:
+            for part_n, part in enumerate(parts):
                 zip_name = f"{tg_set.name}_{part_n}.zip"
-                part_n += 1
                 with zipfile.ZipFile(zip_name, "w") as zf:
                     for sticker_file in part:
                         self.log.debug("add to archive: %s", sticker_file)
