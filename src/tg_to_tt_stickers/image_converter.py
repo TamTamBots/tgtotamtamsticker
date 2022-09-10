@@ -5,6 +5,7 @@ from PIL import Image
 
 TAMTAM_STICKER_SIZE = (512, 512)
 
+
 class ImageConverter:
     """convert images to TamTam format"""
 
@@ -20,7 +21,7 @@ class ImageConverter:
         # fill to TAMTAM_STICKER_SIZE
         x, y = img.size
         size = max(x, y)
-        new_im = Image.new('RGBA', (size, size), (0, 0, 0, 0))
+        new_im = Image.new("RGBA", (size, size), (0, 0, 0, 0))
         new_im.paste(img, (int((size - x) / 2), int((size - y) / 2)))
 
         # convert to png

@@ -4,10 +4,10 @@ import sys
 
 from .tt_bot import TamTamBot
 
-logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s')
+logging.basicConfig(format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger()
-logging.getLogger('PIL').setLevel(logging.INFO)
-logging.getLogger('urllib3').setLevel(logging.INFO)
+logging.getLogger("PIL").setLevel(logging.INFO)
+logging.getLogger("urllib3").setLevel(logging.INFO)
 log.setLevel(logging.DEBUG)
 
 
