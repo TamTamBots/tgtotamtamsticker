@@ -8,7 +8,7 @@ logging.basicConfig(format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger()
 logging.getLogger("PIL").setLevel(logging.INFO)
 logging.getLogger("urllib3").setLevel(logging.INFO)
-log.setLevel(logging.DEBUG)
+log.setLevel(logging.INFO)
 
 
 def run():
