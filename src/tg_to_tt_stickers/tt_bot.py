@@ -121,14 +121,10 @@ class TamTamBot():
 
         #  send zip to user
         zip_files = self.upload_files(zip_names)
-        attachments = []
-        for zip_file in zip_files:
-            attachments.append({
-                "type": "file",
-                "payload": {
-                    "token": zip_file.token
-                }
-            })
+        attachments = [
+            {"type": "file", "payload": {"token": zip_file.token}}
+            for zip_file in zip_files
+        ]
 
         if len(attachments) == 1:
             self.send_message(update.message.sender.user_id, MSG_SUCCESS, attachments=attachments)
