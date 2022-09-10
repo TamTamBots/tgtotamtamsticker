@@ -36,4 +36,5 @@ MSG_MANY_STICKERS = (
     "You're a little unlucky, there are more than 50 stickers in the original Telegram pack.\n"
     "TamTam allows you to upload up to 50 pieces in one archive.\n"
     "I will send some archives, they will need to be sent to the bot"
-    "(https://tt.me/stickers) one by one, waiting for the previous one to be processed.")
+    "(https://tt.me/stickers) one by one, waiting for the previous one to be processed."
+)
